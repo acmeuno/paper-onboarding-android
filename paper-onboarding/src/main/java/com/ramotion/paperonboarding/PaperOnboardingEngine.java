@@ -77,7 +77,7 @@ public class PaperOnboardingEngine implements PaperOnboardingEngineDefaults {
             throw new IllegalArgumentException("No content elements provided");
 
         this.mElements.addAll(contentElements);
-        this.mAppContext = appContext.getApplicationContext();
+        this.mAppContext = appContext;
 
         mRootLayout = (RelativeLayout) rootLayout;
         mContentTextContainer = (FrameLayout) rootLayout.findViewById(R.id.onboardingContentTextContainer);
